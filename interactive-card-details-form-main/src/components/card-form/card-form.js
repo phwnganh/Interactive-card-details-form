@@ -21,7 +21,7 @@ cardHolderNameInput.addEventListener("input", e => {
 cardNumberInput.addEventListener("input", e => {
     let value = e.target.value;
     value = value.replace(/\D/g, "");
-    value = value.slice(0, 16);
+    value = value.slice(0, 19);
     value = value.replace(/(.{4})/g, "$1 ").trim();
 
     e.target.value = value;
@@ -51,12 +51,13 @@ form.addEventListener("submit", (e) => {
     inputs.forEach((input) => {
         const errorElement = document.getElementById(input.getAttribute("aria-describedby"));
         const value = input.value.trim();
+        const sanitizedValue = value.replace(/\s/g, "");
         if (value === "") {
             errorElement.textContent = "Can't be blank";
             input.classList.add("input-error");
             isValid = false;
             return;
-        } else if ((input.id === "card-number" || input.id === "cvc-number" || input.id === "exp-year") && !/^\d+$/.test(value)) {
+        } else if ((input.id === "card-number" || input.id === "cvc-number" || input.id === "exp-year") && !/^\d+$/.test(sanitizedValue)) {
             errorElement.textContent = "Wrong format, numbers only";
             input.classList.add("input-error");
             isValid = false;
@@ -70,7 +71,7 @@ form.addEventListener("submit", (e) => {
                 return;
             }
         } else if (input.id === "card-number") {
-            if (value.length !== 16) {
+            if (value.length !== 19) {
                 errorElement.textContent = "Wrong format, there must be 16 numbers only";
                 input.classList.add("input-error");
                 isValid = false;
