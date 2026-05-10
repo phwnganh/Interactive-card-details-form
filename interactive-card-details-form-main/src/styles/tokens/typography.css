@@ -1,0 +1,36 @@
+@layer tokens {
+    :root{
+        --text-preset-1: 28px;
+        --leading-preset-1: 130%;
+        --tracking-preset-1: 0.2em;
+        --font-preset-1: 500;
+
+        --text-preset-2: 18px;
+        --leading-preset-2: 130%;
+        --tracking-preset-2: 0.16em;
+        --font-preset-2: 500;
+
+        --text-preset-3: 18px;
+        --leading-preset-3: 130%;
+        --font-preset-3: 500;
+
+        --text-preset-4: 14px;
+        --leading-preset-4: 130%;
+        --tracking-preset-4: 2px;
+        --font-preset-4: 500;
+
+        --text-preset-5: 12px;
+        --leading-preset-5: 125%;
+        --tracking-preset-5: 2px;
+        --font-preset-5: 500;
+
+        --text-preset-6: 12px;
+        --leading-preset-6: 125%;
+        --font-preset-6: 500;
+
+        --text-preset-7: 9px;
+        --leading-preset-7: 125%;
+        --tracking-preset-7: 0.07em;
+        --font-preset-7: 500;
+    }
+}

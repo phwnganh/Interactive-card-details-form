@@ -1,0 +1,20 @@
+:root{
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+
+    --color-gray-200: #DFDEE0;
+    --color-gray-400: #ADB5BE;
+    --color-gray-950: #2F2F2F;
+
+    --color-purple-500: #D53AFF;
+    --color-purple-950: #21092F;
+
+    --color-orange-400: #FF834A;
+
+    --color-blue-400: #47A2FF;
+
+    --color-red-400: #FF5050;
+
+    --color-gradient-1: linear-gradient(#FFFFFF, #D2D3D9);
+    --color-gradient-2: linear-gradient(#6348FE, #610595);
+}
