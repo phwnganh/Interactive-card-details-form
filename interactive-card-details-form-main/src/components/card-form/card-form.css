@@ -15,7 +15,8 @@
 
 .card{
     position: absolute;
-
+    max-width: 447px;
+    width: 100%;
 }
 
 .card img{
@@ -26,7 +27,6 @@
 .card-front{
     top: 189px;
     left: 164px;
-    width: 447px;
     z-index: 20;
 }
 
@@ -65,7 +65,7 @@
     justify-content: space-between;
 }
 
-.card-name{
+.card-front__name{
     font-size: var(--text-preset-4);
     line-height: var(--leading-preset-4);
     letter-spacing: var(--tracking-preset-4);
@@ -73,7 +73,7 @@
     text-transform: uppercase;
 }
 
-.card-point{
+.card-front__point{
     font-size: var(--text-preset-4);
     line-height: var(--leading-preset-4);
     letter-spacing: var(--tracking-preset-4);
@@ -83,7 +83,6 @@
 .card-back{
     top: 470px;
     left: 258px;
-    width: 447px;
     z-index: 10;
 }
 
@@ -147,6 +146,12 @@
     width: 100%;
 }
 
+.exp-group-month .exp-group-year{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 label{
     font-size: var(--text-preset-5);
     line-height: var(--leading-preset-5);
@@ -191,6 +196,17 @@ input:focus{
 var(--color-gradient-2) border-box;
     background-origin: border-box;
     background-clip: padding-box, border-box;
+}
+
+.input-error{
+    border: 1px solid var(--color-red-400);
+}
+.error-message{
+    color: var(--color-red-400);
+    font-size: var(--text-preset-6);
+    line-height: var(--leading-preset-6);
+    font-weight: var(--font-preset-6);
+
 }
 
 .card-form__confirm{
