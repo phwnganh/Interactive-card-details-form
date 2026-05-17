@@ -1,100 +1,3 @@
-.preview-section{
-    position: relative;
-    width: 35%;
-    background-image: url("../../../images/bg-main-desktop.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.cards-wrapper{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.card{
-    position: absolute;
-    max-width: 447px;
-    width: 100%;
-}
-
-.card img{
-    width: 100%;
-    display: block;
-}
-
-.card-front{
-    top: 189px;
-    left: 164px;
-    z-index: 20;
-}
-
-.card-front__body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    inset: 0;
-    padding: 28px 32px;
-    width: 100%;
-}
-
-.card-front__image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 84px;
-}
-
-.card-front__content{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-.card-front__code{
-    font-size: var(--text-preset-1);
-    line-height: var(--leading-preset-1);
-    letter-spacing: var(--tracking-preset-1);
-    font-weight: var(--font-preset-1);
-    color: white;
-}
-
-.card-front__description{
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-front__name{
-    font-size: var(--text-preset-4);
-    line-height: var(--leading-preset-4);
-    letter-spacing: var(--tracking-preset-4);
-    color: white;
-    text-transform: uppercase;
-}
-
-.card-front__point{
-    font-size: var(--text-preset-4);
-    line-height: var(--leading-preset-4);
-    letter-spacing: var(--tracking-preset-4);
-    color: white;
-}
-
-.card-back{
-    top: 470px;
-    left: 258px;
-    z-index: 10;
-}
-
-.card-back__code{
-    position: absolute;
-    top: 111px;
-    right: 57px;
-    font-size: var(--text-preset-4);
-    line-height: var(--leading-preset-4);
-    letter-spacing: var(--tracking-preset-4);
-    color: white;
-}
 
 .thank-you-section{
     flex: 1;
@@ -155,4 +58,20 @@
     font-weight: var(--font-preset-3);
     border-radius: 8px;
     width: 100%;
+}
+
+@media (max-width: 1240px) {
+    .thank-you-section{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .thank-you-section{
+        padding: 100px 24px;
+    }
 }
