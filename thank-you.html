@@ -8,56 +8,61 @@
     <title>Thank You</title>
 </head>
 <body class="page">
-<section class="preview-section">
-    <div class="cards-wrapper">
-        <div class="card card-front">
-            <img src="images/bg-card-front.png" alt="card-front"/>
-            <div class="card-front__body">
-                <div class="card-front__image">
-                    <img src="images/card-logo.svg" alt="card-logo"/>
-                </div>
+<main class="main-container">
+    <section class="preview-section">
+        <div class="cards-wrapper">
+            <div class="card card-back">
+                <img src="images/bg-card-back.png" alt="card-back"/>
+                <p class="card-back__code">000</p>
 
-                <div class="card-front__content">
-                    <p class="card-front__code">
-                        0000 0000 0000 0000
-                    </p>
-                    <div class="card-front__description">
-                        <div class="card-front__name">
-                            Jane Appleseed
-                        </div>
-                        <div class="card-front__point">
-                            00/00
+            </div>
+
+            <div class="card card-front">
+                <img src="images/bg-card-front.png" alt="card-front"/>
+                <div class="card-front__body">
+                    <div class="card-front__image">
+                        <img src="images/card-logo.svg" alt="card-logo"/>
+                    </div>
+
+                    <div class="card-front__content">
+                        <p class="card-front__code">
+                            0000 0000 0000 0000
+                        </p>
+                        <div class="card-front__description">
+                            <div class="card-front__name">
+                                Jane Appleseed
+                            </div>
+                            <div class="card-front__point">
+                                00/00
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>
 
         </div>
-        <div class="card card-back">
-            <img src="images/bg-card-back.png" alt="card-back"/>
-            <p class="card-back__code">000</p>
+    </section>
 
+    <section class="thank-you-section">
+        <div class="thank-you-form">
+            <div class="thank-you__icon">
+                <img src="images/icon-complete.svg" alt="complete icon"/>
+            </div>
+            <div class="thank-you__content">
+                <h1 class="thank-you__title">Thank you!</h1>
+                <p class="thank-you__description">We've added your card details</p>
+            </div>
+
+            <button type="submit" class="thank-you__submit">
+                Continue
+            </button>
         </div>
-    </div>
-</section>
 
-<section class="thank-you-section">
-    <div class="thank-you-form">
-        <div class="thank-you__icon">
-            <img src="images/icon-complete.svg" alt="complete icon"/>
-        </div>
-        <div class="thank-you__content">
-            <h1 class="thank-you__title">Thank you!</h1>
-            <p class="thank-you__description">We've added your card details</p>
-        </div>
+    </section>
+</main>
 
-        <button type="submit" class="thank-you__submit">
-            Continue
-        </button>
-    </div>
-
-</section>
 
 <script type="module" src="./src/components/thank-you/thank-you.js"></script>
 </body>
